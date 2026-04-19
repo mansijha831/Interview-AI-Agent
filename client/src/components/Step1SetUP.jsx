@@ -40,7 +40,8 @@ function Step1SetUP({ onStart }) {
     try {
       const result = await axios.post(
         // ServerUrl + "/api/interview/resume",
-        "http://localhost:3000/api/interview/resume",
+        // "http://localhost:3000/api/interview/resume",
+        "https://interview-ai-agent-30jn.onrender.com/api/interview/resume",
         formdata,
         { withCredentials: true },
       );
@@ -66,7 +67,9 @@ function Step1SetUP({ onStart }) {
 
     try {
       const result = await axios.post(
-        "http://localhost:3000/api/interview/generate-questions",
+        // "http://localhost:3000/api/interview/generate-questions",
+        "https://interview-ai-agent-30jn.onrender.com/api/interview/generate-questions",
+        
         {
           role,
           experience,
