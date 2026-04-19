@@ -213,8 +213,8 @@ function Step2Interview({ interviewData, onFinish }) {
     setIsSubmitting(true);
     try {
       const result = await axios.post(
-        // "http://localhost:3000/api/interview/submit-answer",
-        "https://interview-ai-agent-30jn.onrender.com/api/interview/submit-answer",
+        "http://localhost:3000/api/interview/submit-answer",
+
         {
           interviewId,
           questionIndex: currentIndex,
@@ -256,8 +256,8 @@ function Step2Interview({ interviewData, onFinish }) {
     SetIsMicOn(false);
     try {
       const result = await axios.post(
-        // "http://localhost:3000/api/interview/finish",
-        "https://interview-ai-agent-30jn.onrender.com/api/interview/finish",
+        "http://localhost:3000/api/interview/finish",
+    
         {
           interviewId,
         },
