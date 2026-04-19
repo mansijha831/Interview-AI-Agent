@@ -10,7 +10,7 @@ function InterviewPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {step === 1 && (
-        <Step1SetUp
+        <Step1SetUP
           onStart={(data) => {
             setInterviewData(data);
             setStep(2);
