@@ -11,7 +11,8 @@ function InterviewHistory() {
     const getMyInterviews = async () => {
       try {
         const result = await axios.get(
-          "http://localhost:3000/api/interview/get-interview",
+          // "http://localhost:3000/api/interview/get-interview",
+          "https://interview-ai-agent-30jn.onrender.com/api/interview/get-interview",
           { withCredentials: true },
         );
         console.log(result.data);
