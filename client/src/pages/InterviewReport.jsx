@@ -11,7 +11,8 @@ function InterviewReport() {
     const fetchReport = async () => {
       try {
         const result = await axios.get(
-          `http://localhost:3000/api/interview/report/${id}`,
+          // `http://localhost:3000/api/interview/report/${id}`,
+          `https://interview-ai-agent-30jn.onrender.com/api/interview/report/${id}`,
 
           { withCredentials: true },
         );
