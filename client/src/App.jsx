@@ -22,7 +22,8 @@ function App() {
     const getUser = async () => {
       try {
         const result = await axios.get(
-          ServerUrl + "/api/user/current-user",
+          // ServerUrl + "/api/user/current-user",
+         "https://interview-ai-agent-30jn.onrender.com/api/user/current-user",
 
           { withCredentials: true },
         );
