@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { setUserData } from "./redux/userSlice";
 
 // export const ServerUrl = "http://localhost:3000";
- export const ServerUrl =  "https://interview-ai-agent-30jn.onrender.com"
+ export const ServerUrl =  "https://interview-ai-agent-30jn.onrender.com";
 import InterviewHistory from "./pages/interviewHistory";
 import Pricing from "./pages/Pricing";
 import InterviewReport from "./pages/InterviewReport";
