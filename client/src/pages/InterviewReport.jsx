@@ -14,7 +14,7 @@ function InterviewReport() {
           // `http://localhost:3000/api/interview/report/${id}`,
           `https://interview-ai-agent-30jn.onrender.com/api/interview/report/${id}`,
 
-          // { withCredentials: true },
+          { withCredentials: true },
         );
 
         // console.log(result.data);
