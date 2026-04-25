@@ -64,7 +64,8 @@ function Pricing() {
       const amount = plan.id === "basic" ? 100 : plan.id === "pro" ? 500 : 0;
 
       const result = await axios.post(
-        "http://localhost:3000/api/payment/order",
+        // "http://localhost:3000/api/payment/order",
+        "https://interview-ai-agent-30jn.onrender.com/api/payment/order",
         {
           planId: plan.id,
           amount: amount,
@@ -91,7 +92,8 @@ function Pricing() {
         handler: async function (response) {
           // console.log(response);
           const verifypay = await axios.post(
-            "http://localhost:3000/api/payment/verify",
+            // "http://localhost:3000/api/payment/verify",
+            "https://interview-ai-agent-30jn.onrender.com/api/payment/verify",
             response,
             { withCredentials: true },
           );
